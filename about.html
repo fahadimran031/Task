@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Remix | About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="index.html">Bootstrap<span class="text-primary">Remix</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="py-5 bg-light border-bottom">
+      <div class="container">
+        <h1 class="fw-bold">About / Services</h1>
+        <p class="lead text-secondary mb-0">How this project composes Bootstrap patterns into clean layouts.</p>
+      </div>
+    </header>
+
+    <main class="py-5">
+      <div class="container">
+        <div id="components" class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Remixed Components</h5>
+                <p class="card-text">We pick parts from Bootstrap examples (navbars, cards, carousels, forms, modals) and assemble fresh, original pages.</p>
+                <a class="btn btn-outline-primary btn-sm" href="https://getbootstrap.com/docs/5.3/examples/" target="_blank" rel="noopener">Examples</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Design Goals</h5>
+                <ul class="mb-0 text-secondary">
+                  <li>Clarity &amp; polish</li>
+                  <li>Responsive first</li>
+                  <li>Smart utility use</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="layout" class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Layout System</h5>
+                <p class="card-text">Grid + spacing utilities keep composition tidy across viewports.</p>
+                <a href="https://getbootstrap.com/docs/5.3/layout/grid/" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm">Grid Docs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQs -->
+        <div class="row mt-5">
+          <div class="col-lg-8">
+            <h3 class="fw-semibold mb-3">FAQs</h3>
+            <div class="accordion" id="faq">
+              <!-- Q1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="q1-heading">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="true" aria-controls="q1">
+                    Are we allowed custom CSS?
+                  </button>
+                </h2>
+                <div id="q1" class="accordion-collapse collapse show" aria-labelledby="q1-heading" data-bs-parent="#faq">
+                  <div class="accordion-body">
+                    Yes—Bootstrap is the main framework; tasteful custom CSS is welcome when needed.
+                  </div>
+                </div>
+              </div>
+              <!-- Q2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="q2-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2" aria-expanded="false" aria-controls="q2">
+                    Do I need a backend for the contact form?
+                  </button>
+                </h2>
+                <div id="q2" class="accordion-collapse collapse" aria-labelledby="q2-heading" data-bs-parent="#faq">
+                  <div class="accordion-body">
+                    No. If you deploy on Netlify, you can use Netlify Forms. Otherwise, keep it as a client-side demo.
+                  </div>
+                </div>
+              </div>
+              <!-- Q3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="q3-heading">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3" aria-expanded="false" aria-controls="q3">
+                    Where should I host?
+                  </button>
+                </h2>
+                <div id="q3" class="accordion-collapse collapse" aria-labelledby="q3-heading" data-bs-parent="#faq">
+                  <div class="accordion-body">
+                    GitHub Pages or Netlify are both fine. See README for steps.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Side card -->
+          <div class="col-lg-4">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Tech Stack</h5>
+                <ul class="text-secondary mb-0">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Bootstrap 5</li>
+                  <li>Git &amp; GitHub</li>
+                  <li>GitHub Pages / Netlify</li>
+                </ul>
+              </div>
+            </div>
+            <div class="alert alert-primary mt-3" role="alert">
+              Tip: Keep your code clean, indented, and componentized.
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="py-4 border-top">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center">
+        <p class="mb-0 text-secondary">© <span id="y"></span> Bootstrap Remix</p>
+        <a class="text-secondary" href="index.html">Back to Home</a>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
